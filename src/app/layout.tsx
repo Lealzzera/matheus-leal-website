@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ibmPlexSans, ibmPlexMono, beVietnamPro } from "@/functions/fonts";
 import "./globals.css";
-import MenuHeader from "@/components/MenuHeader/MenuHeader";
+import MenuHeader from "@/app/components/MenuHeader/MenuHeader";
 
 export const metadata: Metadata = {
 	title: "Matheus Leal",

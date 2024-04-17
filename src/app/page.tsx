@@ -1,5 +1,7 @@
-import MenuHeader from "@/components/MenuHeader/MenuHeader";
-
-export default async function Home() {
-	return <section></section>;
+export default function Home() {
+	return (
+		<section>
+			<div>Hello world</div>
+		</section>
+	);
 }

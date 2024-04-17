@@ -8,17 +8,22 @@ import LinkedInIcon from "@/icons/LinkedInIcon";
 
 const MenuHeader = () => {
 	const [screenSize, setScreenSize] = useState<number | null>(null);
+	// const windowWidth = window.innerWidth;
 
-	const getScreenSize = () => {
-		setScreenSize(window.innerWidth);
-		return window.innerWidth;
-	};
+	// const getScreenSize = () => {
+	// 	if (windowWidth) {
+	// 		setScreenSize(windowWidth);
+	// 		return windowWidth;
+	// 	}
+	// };
 
-	window.addEventListener("resize", getScreenSize);
+	// window.addEventListener("resize", getScreenSize);
 
-	useEffect(() => {
-		setScreenSize(window.innerWidth);
-	}, []);
+	// useEffect(() => {
+	// 	if (windowWidth) {
+	// 		setScreenSize(windowWidth);
+	// 	}
+	// }, [windowWidth]);
 	return (
 		<header>
 			{screenSize !== null && screenSize > 900 && (
