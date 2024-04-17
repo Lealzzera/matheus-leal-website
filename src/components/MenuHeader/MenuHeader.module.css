@@ -1,0 +1,23 @@
+.menuNav {
+  font-family: var(--font-ibm-plex-sans);
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-dark);
+  padding: 1.68rem 0rem;
+}
+
+.ulList, .iconsLinks {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.menuMobileContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-dark);
+  padding: 15px 15px 15px 15px;
+}
