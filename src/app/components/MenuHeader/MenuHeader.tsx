@@ -7,7 +7,7 @@ import GitHubIcon from "@/icons/GitHubIcon";
 import LinkedInIcon from "@/icons/LinkedInIcon";
 
 const MenuHeader = () => {
-	const [screenSize, setScreenSize] = useState<number | null>(null);
+	const [screenSize, setScreenSize] = useState<number | null>(300);
 	// const windowWidth = window.innerWidth;
 
 	// const getScreenSize = () => {
