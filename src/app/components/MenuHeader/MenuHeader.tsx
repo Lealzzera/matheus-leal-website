@@ -7,23 +7,25 @@ import GitHubIcon from "@/icons/GitHubIcon";
 import LinkedInIcon from "@/icons/LinkedInIcon";
 
 const MenuHeader = () => {
-	const [screenSize, setScreenSize] = useState<number | null>(300);
-	// const windowWidth = window.innerWidth;
+	const [screenSize, setScreenSize] = useState<number | null>(null);
 
-	// const getScreenSize = () => {
-	// 	if (windowWidth) {
-	// 		setScreenSize(windowWidth);
-	// 		return windowWidth;
-	// 	}
-	// };
+	useEffect(() => {
+		const changeWindowMenu = () => {
+			setScreenSize(window.innerWidth);
+		};
 
-	// window.addEventListener("resize", getScreenSize);
+		if (typeof window !== "undefined") {
+			setScreenSize(window.innerWidth);
+			window.addEventListener("resize", changeWindowMenu);
+		}
 
-	// useEffect(() => {
-	// 	if (windowWidth) {
-	// 		setScreenSize(windowWidth);
-	// 	}
-	// }, [windowWidth]);
+		return () => {
+			if (typeof window !== "undefined") {
+				window.removeEventListener("resize", changeWindowMenu);
+			}
+		};
+	}, []);
+
 	return (
 		<header>
 			{screenSize !== null && screenSize > 900 && (
