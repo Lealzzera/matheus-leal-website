@@ -39,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-dark);
-  padding: 0.938rem;
+  padding: 0.938rem 0.938rem 0rem 0.938rem
 }
 
 .menuMobileButton {
