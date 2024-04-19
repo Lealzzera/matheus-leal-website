@@ -1,17 +1,36 @@
-.menuNav {
+.menuNavDesktop {
   font-family: var(--font-ibm-plex-sans);
-  display: flex;
-  
-  align-items: center;
-  justify-content: space-between;
   background-color: var(--background-dark);
-  padding: 1.68rem 0rem;
+  display: flex;
+  align-items: center;
+  max-width: 48.125rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 1.25rem;
 }
 
-.ulList, .iconsLinks {
+.ulDesktopList {
   display: flex;
-  gap: 1.25rem;
-  align-items: center;
+}
+
+.ulDesktopList .optionMenuDesktop {
+  display: block;
+  position: relative;
+  padding: 0.625rem 1.25rem;
+  color: var(--white-secondary);
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.iconsLinks {
+  display: flex;
+  gap: 1.375rem;
+}
+
+
+.ulDesktopList .optionMenuDesktop:hover {
+  background-color: var(--dark-grey);
+  color: var(--white);
 }
 
 .menuMobileContainer {
@@ -20,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-dark);
-  padding: 15px 15px 15px 15px;
+  padding: 0.938rem;
 }
 
 .menuMobileButton {
@@ -30,33 +49,40 @@
 }
 
 .menuMobileSidebarContainer {
-  background-color: red;
+  background-color: #1f1f1f;
+  transition: transform 0.5s ease;
   display: none;
   opacity: 83%;
   top: 0;
   right: 0;
   position: absolute;
   width: 100vw;
-  height: 10px;
+  height: 0.625rem;
   height: 100vh;
-  justify-content: flex-end;
 }
 
-.menuMobileSidebar {
-  background-color: blue;
-  width: 140px;
+.menuMobileSidebarContainer .menuMobileSidebar {
+  background-color: var(--medium-grey);
+  width: 8.75rem;
   height: 100vh;
-  /* animation: closeMenu .5s; */
+  transition: transform 0.5s ease;
 }
 
-/* @keyframes closeMenu {
-  100% {
-    transform: translateX(0%);
-    opacity: 0;
-  }
-  0% {
-    transform: translateX(100%);
-    opacity: 1;
-  }
-}  */
+.ulMobileList {
+  margin-top: 2.813rem;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-ibm-plex-sans);
+}
 
+.ulMobileList .optionMenuMobile {
+  padding: 0.938rem;
+  display: block;
+  text-align: center;
+  color: var(--white-secondary)
+}
+
+.ulMobileList .optionMenuMobile:hover {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
