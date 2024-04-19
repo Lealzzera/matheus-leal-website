@@ -1,0 +1,10 @@
+.aboutContainer {
+
+  padding: 0.938rem 0.938rem 0rem;
+}
+
+@media (min-width: 900px) {
+  .aboutContainer {
+    padding: 4.375rem 0.938rem 0rem 0.938rem;
+  }
+}

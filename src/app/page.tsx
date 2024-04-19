@@ -1,3 +1,9 @@
+import AboutSection from "./components/AboutSection/AboutSection";
+
 export default function Home() {
-	return <section></section>;
+	return (
+		<div className='container'>
+			<AboutSection />
+		</div>
+	);
 }
