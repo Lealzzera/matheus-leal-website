@@ -3,6 +3,7 @@
   --white: #FFF;
   --white-secondary: #C6C6C6;
   --grey: #8B8989;
+  --medium-grey: #343434;
   --dark-grey: #5A5757;
   --light-green: #13FFC6;
   --light-blue: #4AA8FF
@@ -34,7 +35,7 @@ ul, li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a, div {
+h1, h2, h3, h4, h5, h6, p, span, a, div, nav {
   padding: 0;
   margin: 0;
 }
@@ -47,4 +48,49 @@ h1, h2, h3, h4, h5, h6, p, span, a, div {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+.open {
+  transform: rotate(-270deg);
+}
+
+.openSideBarContainer {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.closeSideBarContainer {
+  animation: closeMenu .3s forwards;
+}
+
+.openMobileSideBarMenu {
+  display: block;
+  animation: showMenu .5s;
+}
+
+.closeMobileSideBarMenu {
+  animation: closeMenu .5s forwards;
+}
+
+@keyframes showMenu {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 
+
+@keyframes closeMenu {
+  0% {
+    width: 8.75rem;
+    opacity: 1;
+  }
+  100% {
+    width: 0rem;
+    opacity: 0;
+  }
 }
