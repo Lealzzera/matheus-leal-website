@@ -3,6 +3,7 @@
   --white: #FFF;
   --white-secondary: #C6C6C6;
   --grey: #8B8989;
+  --medium-grey: #343434;
   --dark-grey: #5A5757;
   --light-green: #13FFC6;
   --light-blue: #4AA8FF
@@ -47,4 +48,52 @@ h1, h2, h3, h4, h5, h6, p, span, a, div {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+.open {
+  transform: rotate(-90deg);
+}
+
+.openSideBarContainer {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.closeSideBarContainer {
+  display: none;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.openMobileSideBarMenu {
+  display: block;
+  animation: showMenu .5s;
+}
+
+.closeMobileSideBarMenu {
+  background-color: blue;
+  animation: closeMenu .5s;
+}
+
+@keyframes showMenu {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 
+
+@keyframes closeMenu {
+  0% {
+    width: 140px;
+    opacity: 1;
+  }
+  100% {
+    width: 0px;
+    opacity: 0;
+  }
 }

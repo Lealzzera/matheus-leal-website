@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./MenuHeader.module.css";
 import MenuMobileIcon from "@/icons/MenuMobileIcon";
 import GitHubIcon from "@/icons/GitHubIcon";
@@ -8,6 +8,40 @@ import LinkedInIcon from "@/icons/LinkedInIcon";
 
 const MenuHeader = () => {
 	const [screenSize, setScreenSize] = useState<number | null>(null);
+	const [menuMobileOpen, setMenuMobileOpen] = useState(false);
+	const mobileButtonRef = useRef<HTMLDivElement | null>(null);
+	const menuSideBarContainerRef = useRef<HTMLDivElement | null>(null);
+	const menuMobileSideBarRef = useRef<HTMLDivElement | null>(null);
+
+	const handleToggleMobileMenu = (stateMenuOpen: boolean) => {
+		if (stateMenuOpen) {
+			mobileButtonRef.current?.classList.add("open");
+			menuSideBarContainerRef.current?.classList.add("openSideBarContainer");
+			menuMobileSideBarRef.current?.classList.add("openMobileSideBarMenu");
+			menuMobileSideBarRef.current?.classList.remove("closeMobileSideBarMenu");
+		} else {
+			mobileButtonRef.current?.classList.remove("open");
+			menuMobileSideBarRef.current?.classList.remove("openMobileSideBarMenu");
+			menuMobileSideBarRef.current?.classList.add("closeMobileSideBarMenu");
+		}
+	};
+
+	useEffect(() => {
+		handleToggleMobileMenu(menuMobileOpen);
+	}, [menuMobileOpen]);
+
+	// const handleOpenMobileMenu = () => {
+	// 	const mobileButton = mobileButtonRef.current;
+	// 	const mobileMenuSideBarContainer = menuSideBarContainerRef.current;
+	// 	const mobileMenuSideBar = menuMobileSideBarRef.current;
+
+	// 	if (mobileButton) {
+	// 		mobileButton.classList.toggle("open");
+	// 		setMenuMobileOpen(true);
+	// 		mobileMenuSideBarContainer?.classList.toggle("openSideBarContainer");
+	// 		mobileMenuSideBar?.classList.toggle("openMobileSideBarMenu");
+	// 	}
+	// };
 
 	useEffect(() => {
 		const changeWindowMenu = () => {
@@ -61,7 +95,22 @@ const MenuHeader = () => {
 							<GitHubIcon />
 						</a>
 					</div>
-					<MenuMobileIcon />
+					<div
+						ref={mobileButtonRef}
+						onClick={() => setMenuMobileOpen(!menuMobileOpen)}
+						className={`${styles.menuMobileButton}`}
+					>
+						<MenuMobileIcon />
+					</div>
+					<div
+						ref={menuSideBarContainerRef}
+						className={styles.menuMobileSidebarContainer}
+					>
+						<div
+							ref={menuMobileSideBarRef}
+							className={styles.menuMobileSidebar}
+						></div>
+					</div>
 				</div>
 			)}
 		</header>

@@ -15,9 +15,48 @@
 }
 
 .menuMobileContainer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-dark);
   padding: 15px 15px 15px 15px;
 }
+
+.menuMobileButton {
+  cursor: pointer;
+  z-index: 9;
+  transition: transform 0.5s ease;
+}
+
+.menuMobileSidebarContainer {
+  background-color: red;
+  display: none;
+  opacity: 83%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100vw;
+  height: 10px;
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+.menuMobileSidebar {
+  background-color: blue;
+  width: 140px;
+  height: 100vh;
+  /* animation: closeMenu .5s; */
+}
+
+/* @keyframes closeMenu {
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}  */
+
