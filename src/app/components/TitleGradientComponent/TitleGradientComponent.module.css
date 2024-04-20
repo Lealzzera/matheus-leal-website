@@ -1,12 +1,5 @@
 .title {
   font-family: var(--font-be-vietnam-pro);
-  font-size: 2.25rem;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-}
-
-@media (min-width: 900px) {
-  .title {
-    font-size: 3rem;
-  }
 }
