@@ -1,0 +1,47 @@
+.welcomePageContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.infoContainer {
+  display: flex;
+  margin-top: 11.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.pictureWrap {
+  width: 8.438rem;
+  background-color: black;
+  height: 8.438rem;
+  border-radius: 50%;
+}
+
+.textContainer {
+  text-align: center; 
+}
+
+.subTitleText {
+  margin-top: 0.188rem;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-ibm-plex-sans);
+  font-size: 0.875rem;
+  color: var(--grey);
+}
+
+@media (min-width: 56.25rem) {
+  .infoContainer {
+    margin-top: 13.75rem;
+  }
+
+  .pictureWrap {
+    width: 13.313rem;
+    height: 13.313rem;
+  }
+
+  .subTitleText {
+    font-size: 1rem;
+  }
+}
