@@ -25,10 +25,26 @@
 
 .subTitleText {
   margin-top: 0.188rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: .75rem;
   font-family: var(--font-ibm-plex-sans);
   font-size: 0.875rem;
   color: var(--grey);
+}
+
+.arrowIconContainer {
+  display: inline-block;
+  cursor: pointer;
+  padding: .5rem;
+  animation: 1.5s linear infinite alternate moveArrow;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (min-width: 56.25rem) {
