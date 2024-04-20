@@ -8,11 +8,10 @@ export default function WelcomePageSection() {
 	const sectionRef = useRef<HTMLTableSectionElement>(null);
 	const handleSendToAbout = () => {
 		const screenSize = sectionRef.current?.clientHeight;
-		console.log(screenSize);
-		// 0, screenSize + 70
+
 		if (screenSize) {
 			window.scroll({
-				top: screenSize + 70,
+				top: screenSize + 40,
 				left: 100,
 				behavior: "smooth",
 			});

@@ -1,9 +1,63 @@
 .aboutContainer {
   padding: 0.938rem 0.938rem 0rem;
-  height: 200vh;
+  font-family: var(--font-ibm-plex-sans);
+  height: 200vh; /*remove it after another part implemented */
 }
 
-@media (min-width: 900px) {
+.titleContainer {
+  margin-bottom: 0.625rem;
+}
+
+.subTitleText {
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+.subTitleText span {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+@media (min-width: 31.25rem) {
+  .subTitleText {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 40.625rem) {
+  .titleContainer {
+    margin-bottom: 1.25rem;
+  }
+
+  .descriptionContainer {
+    flex-direction: row-reverse;
+    gap: 1.938rem;
+    align-items: flex-start;
+  }
+  
+  .descriptionContainer p {
+    width: 50vw;
+  }
+
+  .subTitleText {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 46.875rem) { 
+  .subTitleText {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 56.25rem) {
   .aboutContainer {
     padding: 4.375rem 0.938rem 0rem 0.938rem;
   }
