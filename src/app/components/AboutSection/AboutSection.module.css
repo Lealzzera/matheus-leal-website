@@ -1,6 +1,6 @@
 .aboutContainer {
-
   padding: 0.938rem 0.938rem 0rem;
+  height: 200vh;
 }
 
 @media (min-width: 900px) {
