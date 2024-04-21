@@ -4,7 +4,7 @@
   font-family: var(--font-ibm-plex-sans);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .subTitle {
     font-size: 1.5rem;
   }
