@@ -58,9 +58,9 @@ const MenuHeader = () => {
 		content: '';
 		position: absolute;
 		height: 1px;
-		width: 22px;
+		width: 1.375rem;
 		background-color: var(--white);
-		bottom: 8px;
+		bottom: .5rem;
 		left: ${left}px;
 	}
 `;
