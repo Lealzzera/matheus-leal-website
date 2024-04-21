@@ -1,7 +1,6 @@
 .aboutContainer {
   padding: 0.938rem 0.938rem 0rem;
   font-family: var(--font-ibm-plex-sans);
-  height: 200vh; /*remove it after another part implemented */
 }
 
 .titleContainer {

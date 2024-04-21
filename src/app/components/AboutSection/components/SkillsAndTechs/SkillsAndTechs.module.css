@@ -1,0 +1,21 @@
+.containerSkills {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsIcons {
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: .75rem;
+}
+
+ @media (min-width: 25rem) {
+  .skillsIcons {
+    gap: 1.125rem;
+  }
+}

@@ -6,13 +6,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Portrait from "@/app/components/Portrait/Portrait";
+import SkillsAndTechs from "./components/SkillsAndTechs/SkillsAndTechs";
 
 const AboutSection = () => {
 	useEffect(() => {
 		AOS.init();
 	}, []);
 	return (
-		<section data-aos='fade-right' className={`${styles.aboutContainer}`}>
+		<section
+			id='about'
+			data-aos='fade-right'
+			className={`${styles.aboutContainer}`}
+		>
 			<div className={styles.titleContainer}>
 				<TitleGradientComponent
 					fontDesktopSize='3rem'
@@ -39,6 +44,7 @@ const AboutSection = () => {
 					don’t hesitate and feel free to contact me.
 				</p>
 			</div>
+			<SkillsAndTechs />
 		</section>
 	);
 };
