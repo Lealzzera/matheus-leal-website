@@ -1,7 +1,7 @@
 import { IBM_Plex_Sans, IBM_Plex_Mono, Be_Vietnam_Pro } from "next/font/google";
 
 export const ibmPlexSans = IBM_Plex_Sans({
-	weight: ["300", "400", "700"],
+	weight: ["200", "400", "700"],
 	style: ["normal", "italic"],
 	variable: "--font-ibm-plex-sans",
 	subsets: ["latin"],
