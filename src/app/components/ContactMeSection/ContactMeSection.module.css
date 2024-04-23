@@ -1,0 +1,23 @@
+.contactmeContainer {
+  padding: 0.938rem 0.938rem 0rem;
+  font-family: var(--font-ibm-plex-sans);
+  margin-top: 2.5rem;
+  margin-bottom: 15rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionContainer p {
+  font-size: 1rem;
+  color: var(--grey);
+}
+
+@media (min-width: 650px) {
+  .descriptionContainer p {
+    font-size: 1.125rem;
+    color: var(--grey);
+  }
+}
