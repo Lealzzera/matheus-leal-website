@@ -1,0 +1,46 @@
+.projectsContainer {
+  padding: 0.938rem 0.938rem 0rem;
+  font-family: var(--font-ibm-plex-sans);
+  margin-top: 2.5rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionContainer p {
+  font-size: 0.875rem;
+  color: var(--grey);
+}
+
+.projectsWrap {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+.projectsList {
+  font-size: 1rem;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-left: 2.188rem;
+}
+
+.projectsList li{
+  list-style: disc;
+  text-decoration: underline;
+}
+
+@media (min-width: 650px) {
+  .descriptionContainer p {
+    font-size: 1.125rem;
+  }
+
+  .projectsList {
+    font-size: 1.125rem;
+  }
+}
