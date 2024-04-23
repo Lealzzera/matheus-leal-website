@@ -22,7 +22,7 @@
 }
 
 .projectsList {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 200;
   display: flex;
   flex-direction: column;
@@ -33,4 +33,14 @@
 .projectsList li{
   list-style: disc;
   text-decoration: underline;
+}
+
+@media (min-width: 650px) {
+  .descriptionContainer p {
+    font-size: 1.125rem;
+  }
+
+  .projectsList {
+    font-size: 1.125rem;
+  }
 }
