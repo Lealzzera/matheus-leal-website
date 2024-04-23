@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Portrait from "@/app/components/Portrait/Portrait";
 import SkillsAndTechs from "./components/SkillsAndTechs/SkillsAndTechs";
+import Career from "./components/Career/Career";
 
 const AboutSection = () => {
 	useEffect(() => {
@@ -45,6 +46,7 @@ const AboutSection = () => {
 				</p>
 			</div>
 			<SkillsAndTechs />
+			<Career />
 		</section>
 	);
 };
