@@ -1,0 +1,21 @@
+.careerContainer {
+  margin-top: 1.25rem;
+}
+
+.careerCardItemsList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.625rem;
+  gap: 1.125rem;
+}
+
+@media (min-width: 650px) {
+  .careerContainer {
+    margin-top: 4.375rem;
+  }
+
+  .careerCardItemsList {
+    margin-top: 1.125rem;
+    gap: 1.563rem;
+  }
+}

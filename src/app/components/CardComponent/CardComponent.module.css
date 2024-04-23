@@ -1,0 +1,55 @@
+.cardContainer {
+  font-family: var(--font-ibm-plex-sans);
+}
+
+.occupationTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--grey)
+}
+
+.companyText {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--white);
+}
+
+.placeText {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+
+.periodText {
+  font-weight: 400;
+  color: var(--dark-grey);
+  font-size: 0.625rem;
+}
+
+@media (min-width: 650px) {
+  .occupationTitle {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--grey)
+  }
+  
+  .companyText {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.875rem;
+    color: var(--white);
+  }
+  
+  .placeText {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-grey);
+  }
+  
+  .periodText {
+    font-weight: 400;
+    color: var(--dark-grey);
+    font-size: 0.75rem;
+  }
+}
