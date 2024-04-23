@@ -1,0 +1,13 @@
+.formContainer {
+  margin-top: 1.25rem;
+  max-width: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

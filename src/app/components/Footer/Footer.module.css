@@ -1,0 +1,15 @@
+.footer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ibm-plex-sans);
+  color: var(--grey);
+}
+
+@media (min-width: 850px) {
+  .footer {
+    border-top: 1px solid var(--grey);
+  }
+}
