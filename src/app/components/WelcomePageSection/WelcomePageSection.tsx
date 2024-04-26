@@ -21,20 +21,18 @@ export default function WelcomePageSection() {
 	return (
 		<section ref={sectionRef} className={styles.welcomePageContainer}>
 			<div className={styles.infoContainer}>
-				<div className={styles.pictureWrap}>
-					<Image
-						src='assets/home-screen-picture.svg'
-						alt='Matheus Leal Software Developer created and owner of this website.'
-						width={213}
-						height={213}
-						sizes='100vw'
-						priority
-					/>
-				</div>
+				<Image
+					src='assets/home-screen-picture.svg'
+					alt='Matheus Leal Software Developer created and owner of this website.'
+					width={250}
+					height={250}
+					sizes='100vw'
+					priority
+				/>
 				<div className={styles.textContainer}>
 					<TitleGradientComponent
 						fontDesktopSize='2rem'
-						fontMobileSize='1.25rem'
+						fontMobileSize='1.5rem'
 						textColor='-webkit-linear-gradient(left, var(--light-green), var(--light-blue))'
 						titleText='Think, Develop and Share.'
 					/>
