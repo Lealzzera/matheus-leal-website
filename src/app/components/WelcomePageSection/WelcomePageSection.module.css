@@ -49,6 +49,11 @@
 }
 
 @media (min-width: 56.25rem) {
+  .infoContainer {
+    margin-top: 0rem;
+    padding-top: 13rem;
+  }
+
   .pictureWrap {
     width: 13.313rem;
     height: 13.313rem;
