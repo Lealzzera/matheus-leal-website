@@ -11,7 +11,7 @@ const TextAreaComponent = ({ placeHolder, label, id }: TextAreaProps) => {
 	return (
 		<div className={styles.textAreaContainer}>
 			<label htmlFor={id}>{label}</label>
-			<textarea rows={10} id={id} placeholder={placeHolder}></textarea>
+			<textarea required rows={10} id={id} placeholder={placeHolder}></textarea>
 		</div>
 	);
 };

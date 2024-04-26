@@ -11,7 +11,7 @@ const InputText = ({ placeHolder, label, id }: InputTextProps) => {
 	return (
 		<div className={styles.inputTextContainer}>
 			<label htmlFor={id}>{label}</label>
-			<input type='text' id={id} placeholder={placeHolder} />
+			<input required type='text' id={id} placeholder={placeHolder} />
 		</div>
 	);
 };
