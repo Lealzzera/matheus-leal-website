@@ -31,7 +31,7 @@ const ContactMeSection = () => {
 				style={{
 					marginTop: "3rem",
 					color: "var(--dark-grey)",
-					fontSize: "14px",
+					fontSize: "0.875rem",
 				}}
 			>
 				It’s a pleasure to meet you.

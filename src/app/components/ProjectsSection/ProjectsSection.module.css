@@ -35,7 +35,7 @@
   text-decoration: underline;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 40.625rem) {
   .descriptionContainer p {
     font-size: 1.125rem;
   }
