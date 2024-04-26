@@ -1,3 +1,5 @@
+"use client";
+
 import SubTitleComponent from "@/app/components/SubTitleComponent/SubTitleComponent";
 import React from "react";
 import styles from "./FormMessageSection.module.css";
@@ -6,10 +8,14 @@ import TextAreaComponent from "@/app/components/TextAreaComponent/TextAreaCompon
 import Button from "@/app/components/Button/Button";
 
 const FormMessageSection = () => {
+	const handleSubmit = (event: React.FormEvent) => {
+		event.preventDefault();
+		alert("form sent");
+	};
 	return (
 		<div className={styles.formContainer}>
 			<SubTitleComponent subTitleText='Say Hello' />
-			<form>
+			<form onSubmit={handleSubmit}>
 				<div>
 					<InputText placeHolder='Who are you?' label='Name' id='name' />
 				</div>

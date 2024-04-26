@@ -9,7 +9,7 @@
   gap: 1.125rem;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 40.625rem) {
   .careerContainer {
     margin-top: 4.375rem;
   }

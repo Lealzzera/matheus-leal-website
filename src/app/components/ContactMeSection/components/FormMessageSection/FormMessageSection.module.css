@@ -1,6 +1,6 @@
 .formContainer {
   margin-top: 1.25rem;
-  max-width: 425px;
+  max-width: 26.563rem;
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
@@ -9,5 +9,5 @@
 .formContainer form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }

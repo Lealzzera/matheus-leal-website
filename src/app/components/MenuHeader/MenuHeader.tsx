@@ -57,7 +57,7 @@ const MenuHeader = () => {
 		.active::before {
 		content: '';
 		position: absolute;
-		height: 1px;
+		height: 0.063rem;
 		width: 1.375rem;
 		background-color: var(--white);
 		bottom: .5rem;
