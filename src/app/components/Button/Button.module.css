@@ -5,12 +5,22 @@
 
 .containerButton button {
   width: 100%;
-  border-radius: 6px;
-  padding: 15px;
+  border-radius: 0.375rem;
+  padding: 0.938rem;
   border: none;
-  background: -webkit-linear-gradient(left, var(--pool-blue)0%, var(--aqua-green)100%);
+  background: -webkit-linear-gradient(left, var(--pool-blue) 0%, var(--aqua-green) 100%);
   color: #005E47;
   font-size: 1rem;
   font-weight: bold;
   font-family: var(--font-ibm-plex-mono);
+  cursor: pointer;
+}
+
+.containerButton button:hover {
+  background: -webkit-linear-gradient(left, #009FA9 0%, #08724C 100%);
+  color: #94FFE5;
+}
+
+.containerButton button:focus {
+  outline: 1px solid var(--white);
 }

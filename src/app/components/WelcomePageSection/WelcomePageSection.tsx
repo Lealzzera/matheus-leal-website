@@ -3,6 +3,7 @@ import ArrowIcon from "@/icons/ArrowIcon";
 import TitleGradientComponent from "@/app/components/TitleGradientComponent/TitleGradientComponent";
 import styles from "./WelcomePageSection.module.css";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function WelcomePageSection() {
 	const sectionRef = useRef<HTMLTableSectionElement>(null);
@@ -20,7 +21,16 @@ export default function WelcomePageSection() {
 	return (
 		<section ref={sectionRef} className={styles.welcomePageContainer}>
 			<div className={styles.infoContainer}>
-				<div className={styles.pictureWrap}></div>
+				<div className={styles.pictureWrap}>
+					<Image
+						src='assets/home-screen-picture.svg'
+						alt='Matheus Leal Software Developer created and owner of this website.'
+						width={213}
+						height={213}
+						sizes='100vw'
+						priority
+					/>
+				</div>
 				<div className={styles.textContainer}>
 					<TitleGradientComponent
 						fontDesktopSize='2rem'

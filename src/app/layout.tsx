@@ -6,7 +6,8 @@ import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
 	title: "Matheus Leal",
-	description: "Welcome to my personal website.",
+	description:
+		"Hey My name Is Matheus Leal. Would you like to know me? Just check it out.",
 };
 
 export default function RootLayout({

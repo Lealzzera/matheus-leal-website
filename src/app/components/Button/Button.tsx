@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 const Button = () => {
 	return (
 		<div className={styles.containerButton}>
-			<button>Send</button>
+			<button type='submit'>Send</button>
 		</div>
 	);
 };
