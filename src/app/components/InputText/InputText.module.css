@@ -5,6 +5,10 @@
   gap: .25rem;
 }
 
+.inputTextContainer label {
+  cursor: pointer;
+}
+
 .inputTextContainer input {
   box-sizing: border-box;
   display: block;
@@ -20,4 +24,12 @@
 
 .inputTextContainer input:focus {
   outline: 1px solid var(--white);
+}
+
+.inputTextContainer input:disabled {
+  background-color: var(--medium-grey);
+}
+
+.inputTextContainer input:disabled::placeholder {
+  color: var(--background-dark);
 }

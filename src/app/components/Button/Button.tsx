@@ -1,10 +1,17 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const Button = () => {
+type ButtonProps = {
+	buttonText: string;
+	disabled?: boolean;
+};
+
+const Button = ({ buttonText, disabled }: ButtonProps) => {
 	return (
 		<div className={styles.containerButton}>
-			<button type='submit'>Send</button>
+			<button disabled={disabled} type='submit'>
+				{buttonText}
+			</button>
 		</div>
 	);
 };
