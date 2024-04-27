@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: .25rem;
+  position: relative;
 }
 
 .textAreaContainer textarea {
@@ -19,4 +20,36 @@
 
 .textAreaContainer textarea:focus {
   outline: 1px solid var(--white);
+}
+
+.textAreaContainer textarea:disabled {
+  background-color: var(--medium-grey);
+}
+
+.textAreaContainer textarea:disabled::placeholder {
+  color: var(--background-dark);
+}
+
+.loadingContainer {
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingContent {
+  width: 3.125rem;
+  height: 3.125rem;
+  background: transparent;
+  border: 0.25rem solid transparent;
+  border-color: var(--pool-blue) transparent var(--aqua-green) transparent;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
