@@ -24,3 +24,8 @@
 .containerButton button:focus {
   outline: 1px solid var(--white);
 }
+
+.containerButton button:disabled {
+  background: -webkit-linear-gradient(left, #009FA9 0%, #08724C 100%);
+  color: #94FFE5;
+}
