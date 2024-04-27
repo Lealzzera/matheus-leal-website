@@ -25,6 +25,7 @@ const FormMessageSection = () => {
 		message: messageContentValue,
 		client_email: emailInputValue,
 		client_name: nameInputValue,
+		reply_to: emailInputValue,
 	};
 
 	const sendEmail = async (event: React.FormEvent) => {
