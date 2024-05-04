@@ -6,7 +6,17 @@
   display: flex;
   flex-direction: column;
   margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
   gap: 1.125rem;
+}
+
+.pdfLink {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--violet);
+  padding: 0.625rem 0rem;
 }
 
 @media (min-width: 40.625rem) {
