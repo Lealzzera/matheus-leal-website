@@ -5,7 +5,7 @@ type CardComponentProps = {
 	occupation: string;
 	company: string;
 	place: string;
-	period: string;
+	period: () => string;
 };
 
 const CardComponent = ({
@@ -21,7 +21,7 @@ const CardComponent = ({
 				{company}
 				<span className={styles.placeText}> | {place}</span>
 			</p>
-			<p className={styles.periodText}>{period}</p>
+			<p className={styles.periodText}>{period()}</p>
 		</div>
 	);
 };
