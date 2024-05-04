@@ -3,7 +3,8 @@ import styles from "./Career.module.css";
 import SubTitleComponent from "@/app/components/SubTitleComponent/SubTitleComponent";
 import CardComponent from "@/app/components/CardComponent/CardComponent";
 import { getRangeTimeData } from "@/app/helpers/getRangeTimeData";
-import careerData from "@/files/careerData";
+import careerData from "../../../../../../public/assets/files/careerData";
+import Link from "next/link";
 
 const Career = () => {
 	const timePeriod = (date1: string, date2: string, period: string) => {
@@ -26,6 +27,15 @@ const Career = () => {
 					)
 				)}
 			</ul>
+			<Link
+				target='_blank'
+				rel='noopener noreferrer'
+				download
+				href='/matheus-leal-resume.pdf'
+				className={styles.pdfLink}
+			>
+				Download as a PDF file.
+			</Link>
 		</div>
 	);
 };
