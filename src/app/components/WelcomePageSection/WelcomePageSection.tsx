@@ -27,7 +27,7 @@ export default function WelcomePageSection() {
 						textColor='-webkit-linear-gradient(left, var(--light-green), var(--light-blue))'
 						titleText='Think, Develop and Share.'
 					/>
-					<p className={styles.subTitleText}>Fullstack Software Developer.</p>
+					<p className={styles.subTitleText}>A Fullstack Software Developer.</p>
 					<div
 						onClick={handleSendToAbout}
 						className={styles.arrowIconContainer}
