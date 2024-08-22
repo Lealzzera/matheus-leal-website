@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ProjectsSection.module.css";
 import TitleGradientComponent from "../TitleGradientComponent/TitleGradientComponent";
 import SubTitleComponent from "../SubTitleComponent/SubTitleComponent";
-import { projects } from "./projects";
+import { projects } from "../../../../public/assets/files/projects";
 import Link from "next/link";
 
 const ProjectsSection = () => {
