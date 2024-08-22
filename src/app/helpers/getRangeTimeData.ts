@@ -2,15 +2,16 @@ import dayjs from "dayjs";
 const customParseFormat = require("dayjs/plugin/customParseFormat");
 dayjs.extend(customParseFormat);
 
-export function getRangeTimeData(started: string, endded?: string) {
-	const startDate = dayjs(started);
-	const finalDate = endded ? dayjs(endded) : dayjs(new Date());
+export function getRangeTimeData(start: string, end?: string) {
+  const startDate = dayjs(start);
+  const finalDate = end ? dayjs(end) : dayjs(new Date());
 
-	const yearsDiff = finalDate.diff(startDate, "year");
-	const monthStarted = dayjs(startDate).month() + 1;
-	const monthEndded = dayjs(finalDate).month() + 1;
-	const monthDiff = Math.abs(monthStarted - monthEndded);
-	return yearsDiff === 0
-		? `${String(monthDiff)}mos`
-		: `${String(yearsDiff)}yr ${String(monthDiff)}mos`;
+  const yearsDiff = finalDate.diff(startDate, "year");
+
+  const adjustedStartDate = startDate.add(yearsDiff, "year");
+  const monthsDiff = finalDate.diff(adjustedStartDate, "month");
+
+  return yearsDiff === 0
+    ? `${String(monthsDiff)}mos`
+    : `${String(yearsDiff)}yr ${String(monthsDiff)}mos`;
 }
