@@ -15,7 +15,7 @@ export const projects = [
   { urlAddress: "https://www.ba.senac.br", projectName: "Senac - BA" },
   {
     urlAddress: "https://www.mprs.mp.br/",
-    projectName: "Ministério Público do Rio Grade do Sul - MPRS",
+    projectName: "Ministério Público do Rio Grande do Sul - (MPRS)",
   },
   { urlAddress: "https://www.sp.senac.br/", projectName: "Senac - SP" },
   { urlAddress: "https://www.alelo.com.br/", projectName: "Alelo" },
