@@ -1,5 +1,5 @@
 export const projects = [
-  { urlAddress: "https://mrchefe.com.br", projectName: "Mr. Chefe" },
+  // { urlAddress: "https://mrchefe.com.br", projectName: "Mr. Chefe" },
   {
     urlAddress: "https://campusdigital.pucrs.br/login",
     projectName: "Campus Digital - PUCRS",
