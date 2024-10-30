@@ -26,15 +26,15 @@ const careerData = [
     start: "2020-06-01",
     end: "2022-08-01",
   },
-  {
-    id: 4,
-    position: "Front-end Software Developer",
-    company: "M&M Software Solutions",
-    place: "São Paulo - Brazil",
-    period: "Jan 2020 | Now",
-    start: "2020-01-10",
-    end: "",
-  },
+  // {
+  //   id: 4,
+  //   position: "Front-end Software Developer",
+  //   company: "M&M Software Solutions",
+  //   place: "São Paulo - Brazil",
+  //   period: "Jan 2020 | Now",
+  //   start: "2020-01-10",
+  //   end: "",
+  // },
 ];
 
 export default careerData;

@@ -31,7 +31,7 @@ const Career = () => {
         target="_blank"
         rel="noopener noreferrer"
         download
-        href="/matheus-leal-resume.pdf"
+        href="/matheus-leal-resume-english.pdf"
         className={styles.pdfLink}
       >
         Download as a PDF file.
