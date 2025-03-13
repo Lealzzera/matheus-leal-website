@@ -2,7 +2,7 @@ const careerData = [
   {
     id: 1,
     position: "Software Engineer",
-    company: "Poatek | Willow Tree",
+    company: "TELUS Digital",
     place: "São Paulo - Brazil",
     period: "Mar 2025 | Now",
     start: "2025-03-10",
