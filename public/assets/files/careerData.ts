@@ -2,14 +2,23 @@ const careerData = [
   {
     id: 1,
     position: "Software Engineer",
-    company: "UOL Edtech",
+    company: "Poatek | Willow Tree",
     place: "São Paulo - Brazil",
-    period: "Nov 2022 | Now",
-    start: "2022-11-01",
+    period: "Mar 2025 | Now",
+    start: "2025-03-10",
     end: "",
   },
   {
     id: 2,
+    position: "Software Engineer",
+    company: "UOL Edtech",
+    place: "São Paulo - Brazil",
+    period: "Nov 2022 | Mar 2025",
+    start: "2022-11-01",
+    end: "2025-03-10",
+  },
+  {
+    id: 3,
     position: "Software Engineer",
     company: "Digital Pages",
     place: "São Paulo - Brazil",
@@ -18,7 +27,7 @@ const careerData = [
     end: "2022-11-01",
   },
   {
-    id: 3,
+    id: 4,
     position: "Font-end Software Developer",
     company: "Iteris Consulting & Software",
     place: "São Paulo - Brazil",
@@ -26,15 +35,6 @@ const careerData = [
     start: "2020-06-01",
     end: "2022-08-01",
   },
-  // {
-  //   id: 4,
-  //   position: "Front-end Software Developer",
-  //   company: "M&M Software Solutions",
-  //   place: "São Paulo - Brazil",
-  //   period: "Jan 2020 | Now",
-  //   start: "2020-01-10",
-  //   end: "",
-  // },
 ];
 
 export default careerData;
