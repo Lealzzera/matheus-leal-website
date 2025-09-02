@@ -5,7 +5,7 @@
 .occupationTitle {
   font-size: 1rem;
   font-weight: bold;
-  color: var(--grey)
+  color: var(--grey);
 }
 
 .companyText {
@@ -31,22 +31,22 @@
   .occupationTitle {
     font-size: 1.125rem;
     font-weight: bold;
-    color: var(--grey)
+    color: var(--grey);
   }
-  
+
   .companyText {
     font-weight: bold;
     font-style: italic;
     font-size: 1rem;
     color: var(--white);
   }
-  
+
   .placeText {
     font-style: normal;
     font-weight: 400;
     color: var(--dark-grey);
   }
-  
+
   .periodText {
     font-weight: 400;
     color: var(--dark-grey);

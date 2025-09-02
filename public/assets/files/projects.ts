@@ -1,5 +1,16 @@
 export const projects = [
-  // { urlAddress: "https://mrchefe.com.br", projectName: "Mr. Chefe" },
+  {
+    urlAddress: "https://www.koodomobile.com/en",
+    projectName: "Koodo Expert Messaging (Chatbot)",
+  },
+  {
+    urlAddress: "https://www.telus.com/en",
+    projectName: "Telus Expert Messaging (Chatbot)",
+  },
+  {
+    urlAddress: "https://campusdigital.impacta.com.br/login",
+    projectName: "Campus Digital - Impacta",
+  },
   {
     urlAddress: "https://campusdigital.pucrs.br/login",
     projectName: "Campus Digital - PUCRS",

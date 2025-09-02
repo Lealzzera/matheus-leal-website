@@ -6,11 +6,11 @@ import VueJsIcon from "@/icons/VueJsIcon";
 import NextIcon from "@/icons/NextIcon";
 import TypescriptIcon from "@/icons/TypescriptIcon";
 import NodeJsIcon from "@/icons/NodeJsIcon";
-import StyledComponentsIcon from "@/icons/StyledComponentsIcon";
 import ReactJsIcon from "@/icons/ReactJsIcon";
 import PostgreSQLIcon from "@/icons/PostgreSQLIcon";
 import PythonIcon from "@/icons/PythonIcon";
 import VitestIcon from "@/icons/VitestIcon";
+import AwsIcon from "@/icons/AwsIcon";
 
 const SkillsAndTechs = () => {
   return (
@@ -24,7 +24,7 @@ const SkillsAndTechs = () => {
         <PythonIcon />
         <TypescriptIcon />
         <NodeJsIcon />
-        <StyledComponentsIcon />
+        <AwsIcon />
         <ReactJsIcon />
         <VitestIcon />
       </div>
